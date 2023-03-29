@@ -1,0 +1,1173 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>74/56/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Mar 29 11:56:37 CDT 2023</td>
+</tr>
+<tr><td>Total time:</td><td>111 seconds (111927 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in Editor for Graph page", "graph"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;StepDefinition.Graph.driver&quot; is null
+	at StepDefinition.Graph.the_user_is_on_graph_home_page(Graph.java:39)
+	at ✽.The user is on graph home page(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/11Graph.feature:7)
+</pre></div><a href='#' onClick='toggleBox("stack-trace767393855", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace767393855'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;StepDefinition.Graph.driver&quot; is null
+	at StepDefinition.Graph.the_user_is_on_graph_home_page(Graph.java:39)
+	at ✽.The user is on graph home page(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/11Graph.feature:7)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run valid and invalid code in editor page from Types of Linked List page", "Test Linked List page in ds_algo portal"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.switchTo()&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.EnterCode(Base.java:134)
+	at StepDefinition.Linked_List.the_user_enters_valid_code_in_linked_list_code_editor(Linked_List.java:52)
+	at ✽.The user enters valid code in Linked List code editor(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/7Linked_List.feature:83)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1748619323", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1748619323'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.switchTo()&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.EnterCode(Base.java:134)
+	at StepDefinition.Linked_List.the_user_enters_valid_code_in_linked_list_code_editor(Linked_List.java:52)
+	at ✽.The user enters valid code in Linked List code editor(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/7Linked_List.feature:83)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user should be directed to editor page with run button to test python code", "Queue"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.the_user_clicks_on_tryhere_link(Base.java:144)
+	at ✽.The user clicks on Tryhere link(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/9Queue.feature:17)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2106959639", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2106959639'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.the_user_clicks_on_tryhere_link(Base.java:144)
+	at ✽.The user clicks on Tryhere link(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/9Queue.feature:17)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in Editor for Implementation page", "Stack"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.the_user_clicks_on_tryhere_link(Base.java:144)
+	at ✽.The user clicks on Tryhere link(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/8Stack.feature:59)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1135849904", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1135849904'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.the_user_clicks_on_tryhere_link(Base.java:144)
+	at ✽.The user clicks on Tryhere link(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/8Stack.feature:59)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test Practice questions Squares of a Sorted Array page and run code", "Test Arrays page in ds_algo portal"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.switchTo()&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.EnterCode(Base.java:134)
+	at StepDefinition.Arrays_page.when_the_user_enters_valid_code_in_code_editor(Arrays_page.java:90)
+	at ✽.The user enters valid code in code editor(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/6Arrays.feature:163)
+</pre></div><a href='#' onClick='toggleBox("stack-trace854671988", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace854671988'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.switchTo()&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.EnterCode(Base.java:134)
+	at StepDefinition.Arrays_page.when_the_user_enters_valid_code_in_code_editor(Arrays_page.java:90)
+	at ✽.The user enters valid code in code editor(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/6Arrays.feature:163)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run invalid code in editor page from Creating Linked List page", "Test Linked List page in ds_algo portal"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.switchTo()&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.EnterCode(Base.java:134)
+	at StepDefinition.Linked_List.the_user_enters_invalid_code_linked_list_in_code_editor(Linked_List.java:59)
+	at ✽.The user enters invalid code in Linked List code editor(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/7Linked_List.feature:61)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1810019687", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1810019687'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.switchTo()&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.EnterCode(Base.java:134)
+	at StepDefinition.Linked_List.the_user_enters_invalid_code_linked_list_in_code_editor(Linked_List.java:59)
+	at ✽.The user enters invalid code in Linked List code editor(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/7Linked_List.feature:61)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for invalid code in Editor for stack page", "Stack"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.the_user_clicks_on_tryhere_link(Base.java:144)
+	at ✽.The user clicks on Tryhere link(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/8Stack.feature:35)
+</pre></div><a href='#' onClick='toggleBox("stack-trace237279395", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace237279395'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.the_user_clicks_on_tryhere_link(Base.java:144)
+	at ✽.The user clicks on Tryhere link(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/8Stack.feature:35)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test Practice questions Search the Array page and run code", "Test Arrays page in ds_algo portal"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.switchTo()&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.EnterCode(Base.java:134)
+	at StepDefinition.Arrays_page.when_the_user_enters_valid_code_in_code_editor(Arrays_page.java:90)
+	at ✽.The user enters valid code in code editor(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/6Arrays.feature:130)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1897050650", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1897050650'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.switchTo()&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.EnterCode(Base.java:134)
+	at StepDefinition.Arrays_page.when_the_user_enters_valid_code_in_code_editor(Arrays_page.java:90)
+	at ✽.The user enters valid code in code editor(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/6Arrays.feature:130)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in Editor for time complexity page", "DataStructures"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.the_user_clicks_on_tryhere_link(Base.java:144)
+	at ✽.The user clicks on Tryhere link(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/5DataStructures.feature:25)
+</pre></div><a href='#' onClick='toggleBox("stack-trace577636327", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace577636327'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.the_user_clicks_on_tryhere_link(Base.java:144)
+	at ✽.The user clicks on Tryhere link(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/5DataStructures.feature:25)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for invalid code in Editor for Implementation page", "Stack"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.the_user_clicks_on_tryhere_link(Base.java:144)
+	at ✽.The user clicks on Tryhere link(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/8Stack.feature:69)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1030178285", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1030178285'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.the_user_clicks_on_tryhere_link(Base.java:144)
+	at ✽.The user clicks on Tryhere link(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/8Stack.feature:69)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user should be directed to editor page with run button to test python code from Graph Representations page", "graph"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;StepDefinition.Graph.driver&quot; is null
+	at StepDefinition.Graph.the_user_is_on_graph_home_page(Graph.java:39)
+	at ✽.The user is on graph home page(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/11Graph.feature:7)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2113273959", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2113273959'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;StepDefinition.Graph.driver&quot; is null
+	at StepDefinition.Graph.the_user_is_on_graph_home_page(Graph.java:39)
+	at ✽.The user is on graph home page(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/11Graph.feature:7)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for invalid code in Editor for queue page", "Queue"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.the_user_clicks_on_tryhere_link(Base.java:144)
+	at ✽.The user clicks on Tryhere link(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/9Queue.feature:35)
+</pre></div><a href='#' onClick='toggleBox("stack-trace922225899", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace922225899'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.the_user_clicks_on_tryhere_link(Base.java:144)
+	at ✽.The user clicks on Tryhere link(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/9Queue.feature:35)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run valid code in editor page from Arrays Using List page", "Test Arrays page in ds_algo portal"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.switchTo()&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.EnterCode(Base.java:134)
+	at StepDefinition.Arrays_page.when_the_user_enters_valid_code_in_code_editor(Arrays_page.java:90)
+	at ✽.The user enters valid code in code editor(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/6Arrays.feature:48)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1798539562", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1798539562'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.switchTo()&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.EnterCode(Base.java:134)
+	at StepDefinition.Arrays_page.when_the_user_enters_valid_code_in_code_editor(Arrays_page.java:90)
+	at ✽.The user enters valid code in code editor(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/6Arrays.feature:48)
+</pre></div></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user should be directed to editor page with run button to test python code", "DataStructures"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.the_user_clicks_on_tryhere_link(Base.java:144)
+	at ✽.The user clicks on Tryhere link(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/5DataStructures.feature:18)
+</pre></div><a href='#' onClick='toggleBox("stack-trace33281504", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace33281504'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.the_user_clicks_on_tryhere_link(Base.java:144)
+	at ✽.The user clicks on Tryhere link(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/5DataStructures.feature:18)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run valid and invalid code in editor page from Insertion page", "Test Linked List page in ds_algo portal"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.switchTo()&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.EnterCode(Base.java:134)
+	at StepDefinition.Linked_List.the_user_enters_valid_code_in_linked_list_code_editor(Linked_List.java:52)
+	at ✽.The user enters valid code in Linked List code editor(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/7Linked_List.feature:158)
+</pre></div><a href='#' onClick='toggleBox("stack-trace52813883", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace52813883'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.switchTo()&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.EnterCode(Base.java:134)
+	at StepDefinition.Linked_List.the_user_enters_valid_code_in_linked_list_code_editor(Linked_List.java:52)
+	at ✽.The user enters valid code in Linked List code editor(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/7Linked_List.feature:158)
+</pre></div></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user should be directed to editor page with run button to test python code", "Tree"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;StepDefinition.Tree.driver&quot; is null
+	at StepDefinition.Tree.the_user_is_on_tree_home_page(Tree.java:52)
+	at ✽.The user is on tree home page(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/10Tree.feature:7)
+</pre></div><a href='#' onClick='toggleBox("stack-trace133177937", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace133177937'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;StepDefinition.Tree.driver&quot; is null
+	at StepDefinition.Tree.the_user_is_on_tree_home_page(Tree.java:52)
+	at ✽.The user is on tree home page(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/10Tree.feature:7)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run invalid code in editor page from Introduction page", "Test Linked List page in ds_algo portal"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.switchTo()&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.EnterCode(Base.java:134)
+	at StepDefinition.Linked_List.the_user_enters_invalid_code_linked_list_in_code_editor(Linked_List.java:59)
+	at ✽.The user enters invalid code in Linked List code editor(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/7Linked_List.feature:27)
+</pre></div><a href='#' onClick='toggleBox("stack-trace497813380", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace497813380'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.switchTo()&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.EnterCode(Base.java:134)
+	at StepDefinition.Linked_List.the_user_enters_invalid_code_linked_list_in_code_editor(Linked_List.java:59)
+	at ✽.The user enters invalid code in Linked List code editor(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/7Linked_List.feature:27)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to practice questions page", "Tree"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;StepDefinition.Tree.driver&quot; is null
+	at StepDefinition.Tree.the_user_is_on_tree_home_page(Tree.java:52)
+	at ✽.The user is on tree home page(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/10Tree.feature:7)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1939869193", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1939869193'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;StepDefinition.Tree.driver&quot; is null
+	at StepDefinition.Tree.the_user_is_on_tree_home_page(Tree.java:52)
+	at ✽.The user is on tree home page(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/10Tree.feature:7)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run valid code in editor page from Introduction page", "Test Linked List page in ds_algo portal"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.switchTo()&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.EnterCode(Base.java:134)
+	at StepDefinition.Linked_List.the_user_enters_valid_code_in_linked_list_code_editor(Linked_List.java:52)
+	at ✽.The user enters valid code in Linked List code editor(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/7Linked_List.feature:18)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1002541036", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1002541036'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.switchTo()&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.EnterCode(Base.java:134)
+	at StepDefinition.Linked_List.the_user_enters_valid_code_in_linked_list_code_editor(Linked_List.java:52)
+	at ✽.The user enters valid code in Linked List code editor(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/7Linked_List.feature:18)
+</pre></div></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Graph page", "graph"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;StepDefinition.Graph.driver&quot; is null
+	at StepDefinition.Graph.the_user_is_on_graph_home_page(Graph.java:39)
+	at ✽.The user is on graph home page(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/11Graph.feature:7)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2000421523", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2000421523'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;StepDefinition.Graph.driver&quot; is null
+	at StepDefinition.Graph.the_user_is_on_graph_home_page(Graph.java:39)
+	at ✽.The user is on graph home page(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/11Graph.feature:7)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run valid code in editor page from Arrays in Python page", "Test Arrays page in ds_algo portal"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.switchTo()&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.EnterCode(Base.java:134)
+	at StepDefinition.Arrays_page.when_the_user_enters_valid_code_in_code_editor(Arrays_page.java:90)
+	at ✽.The user enters valid code in code editor(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/6Arrays.feature:18)
+</pre></div><a href='#' onClick='toggleBox("stack-trace208402649", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace208402649'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.switchTo()&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.EnterCode(Base.java:134)
+	at StepDefinition.Arrays_page.when_the_user_enters_valid_code_in_code_editor(Arrays_page.java:90)
+	at ✽.The user enters valid code in code editor(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/6Arrays.feature:18)
+</pre></div></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user should be directed to editor page with run button to test python code from Implementation using collections.deque  page", "Queue"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.the_user_clicks_on_tryhere_link(Base.java:144)
+	at ✽.The user clicks on Tryhere link(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/9Queue.feature:51)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1834463844", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1834463844'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.the_user_clicks_on_tryhere_link(Base.java:144)
+	at ✽.The user clicks on Tryhere link(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/9Queue.feature:51)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in Editor for Graph Representations page", "graph"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;StepDefinition.Graph.driver&quot; is null
+	at StepDefinition.Graph.the_user_is_on_graph_home_page(Graph.java:39)
+	at ✽.The user is on graph home page(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/11Graph.feature:7)
+</pre></div><a href='#' onClick='toggleBox("stack-trace584698209", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace584698209'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;StepDefinition.Graph.driver&quot; is null
+	at StepDefinition.Graph.the_user_is_on_graph_home_page(Graph.java:39)
+	at ✽.The user is on graph home page(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/11Graph.feature:7)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run valid code in editor page from Applications of Array page", "Test Arrays page in ds_algo portal"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.switchTo()&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.EnterCode(Base.java:134)
+	at StepDefinition.Arrays_page.when_the_user_enters_valid_code_in_code_editor(Arrays_page.java:90)
+	at ✽.The user enters valid code in code editor(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/6Arrays.feature:106)
+</pre></div><a href='#' onClick='toggleBox("stack-trace919561079", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace919561079'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.switchTo()&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.EnterCode(Base.java:134)
+	at StepDefinition.Arrays_page.when_the_user_enters_valid_code_in_code_editor(Arrays_page.java:90)
+	at ✽.The user enters valid code in code editor(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/6Arrays.feature:106)
+</pre></div></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in Editor for queue page", "Queue"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.the_user_clicks_on_tryhere_link(Base.java:144)
+	at ✽.The user clicks on Tryhere link(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/9Queue.feature:24)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1074655923", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1074655923'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.the_user_clicks_on_tryhere_link(Base.java:144)
+	at ✽.The user clicks on Tryhere link(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/9Queue.feature:24)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user should be directed to editor page with run button to test python code", "Tree"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;StepDefinition.Tree.driver&quot; is null
+	at StepDefinition.Tree.the_user_is_on_tree_home_page(Tree.java:52)
+	at ✽.The user is on tree home page(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/10Tree.feature:7)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1235908203", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1235908203'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;StepDefinition.Tree.driver&quot; is null
+	at StepDefinition.Tree.the_user_is_on_tree_home_page(Tree.java:52)
+	at ✽.The user is on tree home page(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/10Tree.feature:7)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run valid code in editor page from Creating Linked List page", "Test Linked List page in ds_algo portal"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.switchTo()&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.EnterCode(Base.java:134)
+	at StepDefinition.Linked_List.the_user_enters_valid_code_in_linked_list_code_editor(Linked_List.java:52)
+	at ✽.The user enters valid code in Linked List code editor(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/7Linked_List.feature:49)
+</pre></div><a href='#' onClick='toggleBox("stack-trace915608656", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace915608656'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.switchTo()&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.EnterCode(Base.java:134)
+	at StepDefinition.Linked_List.the_user_enters_valid_code_in_linked_list_code_editor(Linked_List.java:52)
+	at ✽.The user enters valid code in Linked List code editor(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/7Linked_List.feature:49)
+</pre></div></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run invalid code in editor page from Arrays Using List page", "Test Arrays page in ds_algo portal"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.switchTo()&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.EnterCode(Base.java:134)
+	at StepDefinition.Arrays_page.the_user_enters_invalid_code_in_code_editor(Arrays_page.java:117)
+	at ✽.The user enters invalid code in code editor(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/6Arrays.feature:57)
+</pre></div><a href='#' onClick='toggleBox("stack-trace28100456", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace28100456'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.switchTo()&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.EnterCode(Base.java:134)
+	at StepDefinition.Arrays_page.the_user_enters_invalid_code_in_code_editor(Arrays_page.java:117)
+	at ✽.The user enters invalid code in code editor(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/6Arrays.feature:57)
+</pre></div></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run invalid code in editor page from Applications of Array page", "Test Arrays page in ds_algo portal"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.switchTo()&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.EnterCode(Base.java:134)
+	at StepDefinition.Arrays_page.the_user_enters_invalid_code_in_code_editor(Arrays_page.java:117)
+	at ✽.The user enters invalid code in code editor(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/6Arrays.feature:115)
+</pre></div><a href='#' onClick='toggleBox("stack-trace586176436", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace586176436'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.switchTo()&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.EnterCode(Base.java:134)
+	at StepDefinition.Arrays_page.the_user_enters_invalid_code_in_code_editor(Arrays_page.java:117)
+	at ✽.The user enters invalid code in code editor(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/6Arrays.feature:115)
+</pre></div></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for invalid code in Editor for Graph Representations page", "graph"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;StepDefinition.Graph.driver&quot; is null
+	at StepDefinition.Graph.the_user_is_on_graph_home_page(Graph.java:39)
+	at ✽.The user is on graph home page(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/11Graph.feature:7)
+</pre></div><a href='#' onClick='toggleBox("stack-trace199000084", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace199000084'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;StepDefinition.Graph.driver&quot; is null
+	at StepDefinition.Graph.the_user_is_on_graph_home_page(Graph.java:39)
+	at ✽.The user is on graph home page(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/11Graph.feature:7)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run invalid code in editor page from Basic Operations in List page", "Test Arrays page in ds_algo portal"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.switchTo()&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.EnterCode(Base.java:134)
+	at StepDefinition.Arrays_page.the_user_enters_invalid_code_in_code_editor(Arrays_page.java:117)
+	at ✽.The user enters invalid code in code editor(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/6Arrays.feature:86)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1004866348", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1004866348'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.switchTo()&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.EnterCode(Base.java:134)
+	at StepDefinition.Arrays_page.the_user_enters_invalid_code_in_code_editor(Arrays_page.java:117)
+	at ✽.The user enters invalid code in code editor(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/6Arrays.feature:86)
+</pre></div></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for invalid code in Editor for terminologies page", "Tree"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;StepDefinition.Tree.driver&quot; is null
+	at StepDefinition.Tree.the_user_is_on_tree_home_page(Tree.java:52)
+	at ✽.The user is on tree home page(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/10Tree.feature:7)
+</pre></div><a href='#' onClick='toggleBox("stack-trace943659381", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace943659381'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;StepDefinition.Tree.driver&quot; is null
+	at StepDefinition.Tree.the_user_is_on_tree_home_page(Tree.java:52)
+	at ✽.The user is on tree home page(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/10Tree.feature:7)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to practice questions page", "DataStructures"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.the_user_clicks_on_practice_questions(Base.java:178)
+	at ✽.The user clicks on Practice Questions link(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/5DataStructures.feature:47)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1740687627", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1740687627'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.the_user_clicks_on_practice_questions(Base.java:178)
+	at ✽.The user clicks on Practice Questions link(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/5DataStructures.feature:47)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run valid and invalid code in editor page from Implement Linked List in Python page", "Test Linked List page in ds_algo portal"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.switchTo()&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.EnterCode(Base.java:134)
+	at StepDefinition.Linked_List.the_user_enters_valid_code_in_linked_list_code_editor(Linked_List.java:52)
+	at ✽.The user enters valid code in Linked List code editor(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/7Linked_List.feature:108)
+</pre></div><a href='#' onClick='toggleBox("stack-trace232639889", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace232639889'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.switchTo()&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.EnterCode(Base.java:134)
+	at StepDefinition.Linked_List.the_user_enters_valid_code_in_linked_list_code_editor(Linked_List.java:52)
+	at ✽.The user enters valid code in Linked List code editor(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/7Linked_List.feature:108)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to graph page and click on Graph Representations link", "graph"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;StepDefinition.Graph.driver&quot; is null
+	at StepDefinition.Graph.the_user_is_on_graph_home_page(Graph.java:39)
+	at ✽.The user is on graph home page(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/11Graph.feature:7)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1529002352", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1529002352'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;StepDefinition.Graph.driver&quot; is null
+	at StepDefinition.Graph.the_user_is_on_graph_home_page(Graph.java:39)
+	at ✽.The user is on graph home page(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/11Graph.feature:7)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test Practice questions Find Numbers With Even Number of Digits page and run code", "Test Arrays page in ds_algo portal"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.switchTo()&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.EnterCode(Base.java:134)
+	at StepDefinition.Arrays_page.when_the_user_enters_valid_code_in_code_editor(Arrays_page.java:90)
+	at ✽.The user enters valid code in code editor(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/6Arrays.feature:152)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1769513770", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1769513770'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.switchTo()&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.EnterCode(Base.java:134)
+	at StepDefinition.Arrays_page.when_the_user_enters_valid_code_in_code_editor(Arrays_page.java:90)
+	at ✽.The user enters valid code in code editor(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/6Arrays.feature:152)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user should be directed to editor page with run button to test python code", "graph"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;StepDefinition.Graph.driver&quot; is null
+	at StepDefinition.Graph.the_user_is_on_graph_home_page(Graph.java:39)
+	at ✽.The user is on graph home page(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/11Graph.feature:7)
+</pre></div><a href='#' onClick='toggleBox("stack-trace995531141", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace995531141'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;StepDefinition.Graph.driver&quot; is null
+	at StepDefinition.Graph.the_user_is_on_graph_home_page(Graph.java:39)
+	at ✽.The user is on graph home page(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/11Graph.feature:7)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to terminologies page", "Tree"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;StepDefinition.Tree.driver&quot; is null
+	at StepDefinition.Tree.the_user_is_on_tree_home_page(Tree.java:52)
+	at ✽.The user is on tree home page(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/10Tree.feature:7)
+</pre></div><a href='#' onClick='toggleBox("stack-trace987489551", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace987489551'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;StepDefinition.Tree.driver&quot; is null
+	at StepDefinition.Tree.the_user_is_on_tree_home_page(Tree.java:52)
+	at ✽.The user is on tree home page(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/10Tree.feature:7)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test Practice questions Max Consecutive Ones page and run code", "Test Arrays page in ds_algo portal"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.switchTo()&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.EnterCode(Base.java:134)
+	at StepDefinition.Arrays_page.when_the_user_enters_valid_code_in_code_editor(Arrays_page.java:90)
+	at ✽.The user enters valid code in code editor(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/6Arrays.feature:141)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1925038057", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1925038057'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.switchTo()&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.EnterCode(Base.java:134)
+	at StepDefinition.Arrays_page.when_the_user_enters_valid_code_in_code_editor(Arrays_page.java:90)
+	at ✽.The user enters valid code in code editor(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/6Arrays.feature:141)
+</pre></div></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run valid and invalid code in editor page from Deletion page", "Test Linked List page in ds_algo portal"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.switchTo()&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.EnterCode(Base.java:134)
+	at StepDefinition.Linked_List.the_user_enters_valid_code_in_linked_list_code_editor(Linked_List.java:52)
+	at ✽.The user enters valid code in Linked List code editor(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/7Linked_List.feature:183)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1150264921", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1150264921'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.switchTo()&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.EnterCode(Base.java:134)
+	at StepDefinition.Linked_List.the_user_enters_valid_code_in_linked_list_code_editor(Linked_List.java:52)
+	at ✽.The user enters valid code in Linked List code editor(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/7Linked_List.feature:183)
+</pre></div></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying signout link in home page", "graph"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;StepDefinition.Graph.driver&quot; is null
+	at StepDefinition.Graph.the_user_is_on_graph_home_page(Graph.java:39)
+	at ✽.The user is on graph home page(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/11Graph.feature:7)
+</pre></div><a href='#' onClick='toggleBox("stack-trace379115456", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace379115456'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;StepDefinition.Graph.driver&quot; is null
+	at StepDefinition.Graph.the_user_is_on_graph_home_page(Graph.java:39)
+	at ✽.The user is on graph home page(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/11Graph.feature:7)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to graph representations page and click on Practice Questions", "graph"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;StepDefinition.Graph.driver&quot; is null
+	at StepDefinition.Graph.the_user_is_on_graph_home_page(Graph.java:39)
+	at ✽.The user is on graph home page(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/11Graph.feature:7)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1941598182", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1941598182'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;StepDefinition.Graph.driver&quot; is null
+	at StepDefinition.Graph.the_user_is_on_graph_home_page(Graph.java:39)
+	at ✽.The user is on graph home page(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/11Graph.feature:7)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for invalid code in Editor for overview of trees page", "Tree"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;StepDefinition.Tree.driver&quot; is null
+	at StepDefinition.Tree.the_user_is_on_tree_home_page(Tree.java:52)
+	at ✽.The user is on tree home page(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/10Tree.feature:7)
+</pre></div><a href='#' onClick='toggleBox("stack-trace248495761", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace248495761'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;StepDefinition.Tree.driver&quot; is null
+	at StepDefinition.Tree.the_user_is_on_tree_home_page(Tree.java:52)
+	at ✽.The user is on tree home page(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/10Tree.feature:7)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in Editor for stack page", "Stack"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.the_user_clicks_on_tryhere_link(Base.java:144)
+	at ✽.The user clicks on Tryhere link(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/8Stack.feature:24)
+</pre></div><a href='#' onClick='toggleBox("stack-trace854936618", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace854936618'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.the_user_clicks_on_tryhere_link(Base.java:144)
+	at ✽.The user clicks on Tryhere link(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/8Stack.feature:24)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to overview of trees page", "Tree"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;StepDefinition.Tree.driver&quot; is null
+	at StepDefinition.Tree.the_user_is_on_tree_home_page(Tree.java:52)
+	at ✽.The user is on tree home page(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/10Tree.feature:7)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1871580398", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1871580398'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;StepDefinition.Tree.driver&quot; is null
+	at StepDefinition.Tree.the_user_is_on_tree_home_page(Tree.java:52)
+	at ✽.The user is on tree home page(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/10Tree.feature:7)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user should be directed to editor page with run button to test python code", "Stack"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.the_user_clicks_on_tryhere_link(Base.java:144)
+	at ✽.The user clicks on Tryhere link(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/8Stack.feature:17)
+</pre></div><a href='#' onClick='toggleBox("stack-trace594491525", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace594491525'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.the_user_clicks_on_tryhere_link(Base.java:144)
+	at ✽.The user clicks on Tryhere link(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/8Stack.feature:17)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for invalid code in Editor for Implementation using collections.deque  page", "Queue"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.the_user_clicks_on_tryhere_link(Base.java:144)
+	at ✽.The user clicks on Tryhere link(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/9Queue.feature:69)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1173755930", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1173755930'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.the_user_clicks_on_tryhere_link(Base.java:144)
+	at ✽.The user clicks on Tryhere link(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/9Queue.feature:69)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run invalid code in editor page from Arrays in Python page", "Test Arrays page in ds_algo portal"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.switchTo()&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.EnterCode(Base.java:134)
+	at StepDefinition.Arrays_page.the_user_enters_invalid_code_in_code_editor(Arrays_page.java:117)
+	at ✽.The user enters invalid code in code editor(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/6Arrays.feature:27)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1210231629", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1210231629'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.switchTo()&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.EnterCode(Base.java:134)
+	at StepDefinition.Arrays_page.the_user_enters_invalid_code_in_code_editor(Arrays_page.java:117)
+	at ✽.The user enters invalid code in code editor(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/6Arrays.feature:27)
+</pre></div></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in Editor for Implementation using collections.deque page", "Queue"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.the_user_clicks_on_tryhere_link(Base.java:144)
+	at ✽.The user clicks on Tryhere link(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/9Queue.feature:59)
+</pre></div><a href='#' onClick='toggleBox("stack-trace906424041", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace906424041'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.the_user_clicks_on_tryhere_link(Base.java:144)
+	at ✽.The user clicks on Tryhere link(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/9Queue.feature:59)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in Editor for overview of trees page", "Tree"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;StepDefinition.Tree.driver&quot; is null
+	at StepDefinition.Tree.the_user_is_on_tree_home_page(Tree.java:52)
+	at ✽.The user is on tree home page(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/10Tree.feature:7)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1654589039", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1654589039'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;StepDefinition.Tree.driver&quot; is null
+	at StepDefinition.Tree.the_user_is_on_tree_home_page(Tree.java:52)
+	at ✽.The user is on tree home page(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/10Tree.feature:7)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for invalid code in Editor for time complexity page", "DataStructures"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.the_user_clicks_on_tryhere_link(Base.java:144)
+	at ✽.The user clicks on Tryhere link(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/5DataStructures.feature:36)
+</pre></div><a href='#' onClick='toggleBox("stack-trace192973557", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace192973557'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.the_user_clicks_on_tryhere_link(Base.java:144)
+	at ✽.The user clicks on Tryhere link(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/5DataStructures.feature:36)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run valid code in editor page from Basic Operations in List page", "Test Arrays page in ds_algo portal"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.switchTo()&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.EnterCode(Base.java:134)
+	at StepDefinition.Arrays_page.when_the_user_enters_valid_code_in_code_editor(Arrays_page.java:90)
+	at ✽.The user enters valid code in code editor(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/6Arrays.feature:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace204058844", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace204058844'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.switchTo()&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.EnterCode(Base.java:134)
+	at StepDefinition.Arrays_page.when_the_user_enters_valid_code_in_code_editor(Arrays_page.java:90)
+	at ✽.The user enters valid code in code editor(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/6Arrays.feature:77)
+</pre></div></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user should be directed to editor page with run button to test python code from Implementation page", "Stack"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.the_user_clicks_on_tryhere_link(Base.java:144)
+	at ✽.The user clicks on Tryhere link(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/8Stack.feature:51)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2132860885", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2132860885'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.the_user_clicks_on_tryhere_link(Base.java:144)
+	at ✽.The user clicks on Tryhere link(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/8Stack.feature:51)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in Editor for terminologies page", "Tree"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;StepDefinition.Tree.driver&quot; is null
+	at StepDefinition.Tree.the_user_is_on_tree_home_page(Tree.java:52)
+	at ✽.The user is on tree home page(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/10Tree.feature:7)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1694519286", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1694519286'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;StepDefinition.Tree.driver&quot; is null
+	at StepDefinition.Tree.the_user_is_on_tree_home_page(Tree.java:52)
+	at ✽.The user is on tree home page(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/10Tree.feature:7)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for invalid code in Editor for Graph page", "graph"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;StepDefinition.Graph.driver&quot; is null
+	at StepDefinition.Graph.the_user_is_on_graph_home_page(Graph.java:39)
+	at ✽.The user is on graph home page(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/11Graph.feature:7)
+</pre></div><a href='#' onClick='toggleBox("stack-trace836621476", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace836621476'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;StepDefinition.Graph.driver&quot; is null
+	at StepDefinition.Graph.the_user_is_on_graph_home_page(Graph.java:39)
+	at ✽.The user is on graph home page(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/11Graph.feature:7)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run valid and invalid code in editor page from Traversal page", "Test Linked List page in ds_algo portal"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.switchTo()&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.EnterCode(Base.java:134)
+	at StepDefinition.Linked_List.the_user_enters_valid_code_in_linked_list_code_editor(Linked_List.java:52)
+	at ✽.The user enters valid code in Linked List code editor(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/7Linked_List.feature:133)
+</pre></div><a href='#' onClick='toggleBox("stack-trace196316233", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace196316233'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.switchTo()&quot; because &quot;StepDefinition.Base.driver&quot; is null
+	at StepDefinition.Base.EnterCode(Base.java:134)
+	at StepDefinition.Linked_List.the_user_enters_valid_code_in_linked_list_code_editor(Linked_List.java:52)
+	at ✽.The user enters valid code in Linked List code editor(file:///C:/Users/shubh/eclipse-workspace/DS_AlgoProject/src/test/resources/features/7Linked_List.feature:133)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user navigates to sign in page", "Test DS Algo portal home page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks for valid username and password", "Test ds_algo portal sign in page"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests Get Started button after loggin in", "Home page after loggin in"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user navigates to registration page", "Test DS Algo portal home page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks drop down functionality witout sign in", "Test DS Algo portal home page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks drop down functionality witout sign in", "Test DS Algo portal home page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks drop down functionality witout sign in", "Test DS Algo portal home page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Operations in Stack page", "Stack"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Traversal Page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User navigates to register page", "Test Automation DS Algo register page"</td>
+<td></td>
+<td>3</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Deletion Page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to time complexity page", "DataStructures"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Practice Questins Page from Traversal Page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Arrays in Python Page", "Test Arrays page in ds_algo portal"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Insertion Page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests Get Started button after loggin in", "Home page after loggin in"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Creating Linked List Page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests Get Started button after loggin in", "Home page after loggin in"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests Get Started button after loggin in", "Home page after loggin in"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Practice Questins Page from Applications of Array Page", "Test Arrays page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Introduction Page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Practice Questins Page from Deletion Page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Practice Questins Page from Types of Linked List Page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks drop down functionality witout sign in", "Test DS Algo portal home page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to stack page and click on Implementation link", "Stack"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests drop down list functionality on sign in page", "Test ds_algo portal sign in page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User should get error message below password textbox", "Test Automation DS Algo register page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Applications of Array Page", "Test Arrays page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user tests sign in functionality with empty username textbox", "Test ds_algo portal sign in page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests drop down list functionality on sign in page", "Test ds_algo portal sign in page"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks drop down functionality witout sign in", "Test DS Algo portal home page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to queue page and click on  link Implementation using collections.deque", "Queue"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user navigates to ds_algo portal home page", "Test DS Algo portal home page"</td>
+<td></td>
+<td>6</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks drop down functionality after loggin in", "Home page after loggin in"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Practice Questins Page from Arrays in Python", "Test Arrays page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Practice Questins Page from Insertion Page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks for invalid username and password", "Test ds_algo portal sign in page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user tests sign in functionality with empty password textbox", "Test ds_algo portal sign in page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Queue page", "Queue"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests registration link on sign in page", "Test ds_algo portal sign in page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks drop down entries", "Test DS Algo portal home page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests drop down list functionality on sign in page", "Test ds_algo portal sign in page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks login functionality", "Test DS Algo portal home page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Practice Questins Page from Arrays Using List", "Test Arrays page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks drop down functionality after loggin in", "Home page after loggin in"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks for invalid username and password", "Test ds_algo portal sign in page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks drop down functionality after loggin in", "Home page after loggin in"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests registration link on sign in page", "Test ds_algo portal sign in page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Implement Linked List in Python Page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User should get error message for all fields empty below username textbox", "Test Automation DS Algo register page"</td>
+<td></td>
+<td>5</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks for invalid username and password", "Test ds_algo portal sign in page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks drop down functionality witout sign in", "Test DS Algo portal home page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Practice Questins Page from Implement Linked List in Python Page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User registers with invalid username and password", "Test Automation DS Algo register page"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Practice Questins Page from Creating Linked List Page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests sign in link on sign in page", "Test ds_algo portal sign in page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks drop down functionality after loggin in", "Home page after loggin in"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks drop down functionality after loggin in", "Home page after loggin in"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Arrays Using List Page", "Test Arrays page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Practice Questins Page from Introduction Page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user navigates to ds algo home page", "Test Automation DS Algo register page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Basic Operations in List Page", "Test Arrays page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks for invalid username and password", "Test ds_algo portal sign in page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User should get error message below confirm password textbox", "Test Automation DS Algo register page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests drop down list functionality on sign in page", "Test ds_algo portal sign in page"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests Get Started button after loggin in", "Home page after loggin in"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Practice Questins Page from Basic Operations In List Page", "Test Arrays page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks drop down functionality after loggin in", "Home page after loggin in"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests drop down list functionality on sign in page", "Test ds_algo portal sign in page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Types of Linked List Page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User registers successfully", "Test Automation DS Algo register page"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests drop down list functionality on sign in page", "Test ds_algo portal sign in page"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests Get Started button after loggin in", "Home page after loggin in"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests Get Started button after loggin in", "Home page after loggin in"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+</table><p>
+</body>
+</html>
